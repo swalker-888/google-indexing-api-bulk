@@ -12,6 +12,9 @@ https://developers.google.com/search/apis/indexing-api/v3/prereqs
 
 Once you have access to Indexing API you'll be able to download a public/private key pair JSON file, this contains all of your credentials and should be saved as "service_account.json".
 
+Add the URLs to the urls.txt file that you need to be crawled/indexed.
+
+
 ## Verify site ownership in Search Console to submit URLs for indexing
 In this step, you'll verify that you have control over your web property.
 
