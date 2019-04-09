@@ -1,5 +1,5 @@
 
-
+const fs = require("fs");
 var request = require("request");
 var {google} = require("googleapis");
 var key = require("./service_account.json");
@@ -12,11 +12,10 @@ const jwtClient = new google.auth.JWT(
     null
 );
 
-const batch = [ "add", 
-                "your", 
-                "URLs",
-                "here"
-                ]
+const batch = fs
+    .readFileSync("create-text-file-with-urls.txt")
+    .toString()
+    .split("\n");
 
 jwtClient.authorize(function(err, tokens) {
     if (err) {
