@@ -13,7 +13,7 @@ const jwtClient = new google.auth.JWT(
 );
 
 const batch = fs
-    .readFileSync("create-text-file-with-urls.txt")
+    .readFileSync("urls.txt")
     .toString()
     .split("\n");
 
