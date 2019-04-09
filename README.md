@@ -1,5 +1,7 @@
 # google-indexing-api-bulk
 
+Requires node.js - https://nodejs.org/en/download/
+
 This script will help you index your website's pages in bulk, without having to manually request each URL for submission in the Search Console interface.
 
 First off you will need to set up access to the Indexing API in Google Cloud Platform - follow the instructions below.
@@ -32,4 +34,5 @@ Under Verified owners, click Add an owner.
 ## Quotas
 
 100 URLs per request batch
+
 200 URLs per day
