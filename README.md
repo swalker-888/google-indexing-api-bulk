@@ -1,5 +1,7 @@
 # google-indexing-api-bulk
 
+Created by Steve at [Journey Further SEO](https://www.journeyfurther.com/)
+
 Requires node.js - https://nodejs.org/en/download/
 
 This script will help you index your website's pages in bulk, without having to manually request each URL for submission in the Search Console interface.
