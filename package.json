@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "googleapis": "^38.0.0"
+    "fs": "0.0.1-security",
+    "googleapis": "^46.0.0",
+    "request": "^2.88.0"
   }
 }
