@@ -29,10 +29,9 @@ For example, "my-service-account@test-project-42.google.com.iam.gserviceaccount.
 
 Then...
 
-1. Go to Google Search Console
+1. Go to [Google Webmaster Central](https://www.google.com/webmasters/verification/home)
 2. Click your verified property
-3. Select Verification details from the Settings gear next to your verified property.
-Under Verified owners, click Add an owner.
+3. Scroll down and click 'Add an owner'.
 4. Add your service account email address as an owner to the property.
 
 
