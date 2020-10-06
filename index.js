@@ -14,7 +14,8 @@ const jwtClient = new google.auth.JWT(
 const batch = fs
   .readFileSync('urls.txt')
   .toString()
-  .split('\n');
+  .split('\n')
+  .filter(Boolean); // filter out '\n"EOF
 
 jwtClient.authorize(function(err, tokens) {
   if (err) {
