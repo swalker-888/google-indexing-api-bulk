@@ -23,12 +23,13 @@ class App {
 
   start() {
     const urls = this.getUrls();
+    let urlsCoursor = 0
     for (let keyIndex = 0; keyIndex < keys.length; keyIndex++) {
       const jwtClient = this.getJwtClient(keys[keyIndex]);
       for (let iteration = 0; iteration < this.tokenIterations; iteration++) {
-        const urlsCoursor = (keyIndex + iteration) * this.urlsPerRequest;
         const batch = urls.slice(urlsCoursor, urlsCoursor + this.urlsPerRequest);
         this.sendUrls(jwtClient, batch);
+        urlsCoursor += this.urlsPerRequest;
       }
     }
   }
