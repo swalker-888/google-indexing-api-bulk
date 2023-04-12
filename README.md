@@ -1,3 +1,15 @@
+# start
+
+```
+node index.js <urls per request> <token iterations>
+```
+
+urls per request - the number of urls that will be sent per request
+
+token iterations - number of requests with the same token
+
+for example 100(first arg) 2(second arg) - token makes 2 requests for 100 urls, if there are 3 tokens then 100*2*3 = 600 urls will be sent from the url.txt file.
+
 # google-indexing-api-bulk
 
 Created by Steve at [Journey Further SEO](https://www.journeyfurther.com/)
