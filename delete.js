@@ -19,9 +19,6 @@ jwtClient.authorize(function (err, tokens) {
     return;
   }
 
-  const operationType =
-    process.argv[2] === "--delete" ? "URL_DELETED" : "URL_UPDATED";
-
   const items = batch.map((line) => {
     return {
       "Content-Type": "application/http",
@@ -31,7 +28,7 @@ jwtClient.authorize(function (err, tokens) {
         "Content-Type: application/json\n\n" +
         JSON.stringify({
           url: line,
-          type: operationType,
+          type: "URL_DELETED",
         }),
     };
   });
