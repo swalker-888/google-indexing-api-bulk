@@ -1,0 +1,3 @@
+https://mysite.com/url1
+https://mysite.com/url2
+https://mysite.com/url3
